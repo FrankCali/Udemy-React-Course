@@ -4,7 +4,15 @@ import ReactDOM from 'react-dom';
 
 //Create a React Componenet
 const App = () => {
-   return <div>Hello World!</div>
+    const buttonText = { text: 'Click Me!' };
+    const labelText = 'Enter Name:'
+   return (
+    <div>
+    <label htmlFor="name" className="label">{labelText}</label>
+    <input id="name" type="text"/>
+    <button style={{backgroundColor: 'blue', color: 'white'}}>{buttonText.text}</button>
+  </div>
+   );
 }
 
 //Take the react Componenet and show it on the screen
